@@ -25,7 +25,7 @@ function App() {
   }
 
   console.log(employeeData);
-  
+
   const getEmployeeData = (id=null) => {
     setLoading(true);
 
@@ -65,16 +65,16 @@ function App() {
   //
   //
   return (
-    <div className="App " >
+    <div className="App" >
       
-        {!!error && <Problem resetState= {resetState} message={error}/>} {/* if theres an Error display the error screen.*/}
+        {!!error && <div> <Problem resetState= {resetState} message={error}/></div>} {/* if theres an Error display the error screen.*/}
 
 
 {/* If not then display the menu as normal */}
        {!error && <>
-        {!!loading && <div class='bg-dark'><Loading/></div>}
+        {!!loading && <div class='d-flex justify-content-center align-items-center bg-dark h-100'><Loading/></div>}
        
-        {!loading && <div class="p-3 mb-2 bg-secondary text-dark">
+        {!loading && <div class="h-100 bg-secondary text-dark">
 
 
         {!selectedEmployee && <Employees setSelectedEmployee={setSelectedEmployee} data={employeeData}/>} {/*cards of Employees */}
