@@ -24,7 +24,8 @@ function App() {
 
   }
 
-
+  console.log(employeeData);
+  
   const getEmployeeData = (id=null) => {
     setLoading(true);
 
