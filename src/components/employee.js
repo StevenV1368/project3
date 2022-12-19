@@ -4,8 +4,8 @@ import './employees.css'
 const Employee = (props) => {
   return (
     <>
-    <div class="d-flex justify-content-center">
-      <div class="card border-2 border-danger rounded-3" style={{width: '18rem'}}>
+    <div class="d-flex justify-content-center p-5">
+      <div class="card border-2 border-danger rounded-3" style={{width: '30em'}}>
         <img src={props.data.photo} alt=''/>
         <div class="card-body bg-primary bg-gradient">
         <p class="fs-5 font1">
